@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      
+      .active, .accordion:hover {
+        background-color: #ccc; 
+      }
+      
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+      }
+
+      img {
+        width: 50%;
+        height:35%;
+      }
+
+      td {
+        padding-right: 10px;
+        padding-left: 10px;
+        border: 1px solid black;
+      }
+      </style>
+</head>
+<body>
+<a href="index.html">Switch page</a><br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul>
+      <li>Waterfall</li>
+      <li>Iterative</li>
+      <li>Prototyping</li>
+      <li>Spiral</li>
+      <li>V-shape</li>
+      <li>Agile</li>
+      <button class="accordion">Waterfall</button>
+<div class="panel">
+  <p>The waterfall model is one of the best known and oldest software development methods, named after the analogy of successive waterfalls - water falls from one level to the next and does not return..</p>
+  <ul>
+      <li>This model is used only when the requirements are very well known, clear and fixed.</li>
+      <li>Product definition is stable.</li>
+      <li>Technology is understood.</li>
+      <li>There are no ambiguous requirements.</li>
+      <li>Ample resources with required expertise are available freely.</li>
+      <li>The project is short.</li>
+  </ul>
+  <img src="https://miro.medium.com/max/1400/0*aD7UeMSSQ-aEJYBN" alt="picture">
+</div>
+
+<button class="accordion">Iterative</button>
+<div class="panel">
+  <p>Pildiotsingu Iterative programming tulemus
+    In programming specifically, iterative refers to a sequence of instructions or code being repeated until a specific end result is achieved. ... Almost all computer programs are executed by using iterations and loops to execute specific tasks and provide solutions to problems.</p>
+    <img src="https://wishdesk.com/sites/default/files/inline-images/itterative-design-process.jpg" alt="picture">
+  </div>
+
+<button class="accordion">Prototyping</button>
+<div class="panel">
+  <p>Prototype-based programming is a style of object-based programming where behavior is reused through the process of reusing existing objects that act as prototypes. This model can also be called prototype, prototype-oriented, class-based, or instance-based programming.</p>
+  <img src="https://static.javatpoint.com/tutorial/software-engineering/images/prototype-model.png" alt="picture">
+</div>
+<button class="accordion">Spiral</button>
+<div class="panel">
+  <p>The spiral model is a risk-based software development process model. Based on the unique risk patterns of a given project, the spiral model directs the team to adopt elements of one or more process models, such as an incremental, waterfall, or evolutionary prototype.</p>
+  <img src="https://www.researchgate.net/profile/Benjamin-Cowley-3/publication/287268554/figure/fig1/AS:614209679261713@1523450407826/The-spiral-model-of-design-This-consists-of-four-phases-1-Determine-objectives.png" alt="picture">
+</div>
+<button class="accordion">V-shape</button>
+<div class="panel">
+  <p>In software development, the V-model refers to a development process that can be considered an extension of the Kose model, and is an example of a more general V-model. Instead of moving linearly downwards, the process steps are bent upwards after the coding phase to form a typical V-shape.</p>
+  <img src="https://static.javatpoint.com/tutorial/software-engineering/images/software-engineering-v-model.png" alt="picture">
+
+</div>
+
+<button class="accordion">Agile</button>
+<div class="panel">
+  <p>Field development is rapid software development that uses agile methodologies. According to this, project failure is considered to be the most costly aspect of software development, and therefore this type of software development aims to organize the work in a way that would increase the likelihood of success. Every interation involves cross functional teams.</p>
+  
+  <h4>Advantages of Agile model: </h4>
+  <ul>
+	<li>Customer satisfaction by rapid, continuous delivery of useful software.</li>
+	<li>People and interactions are emphasized rather than process and tools. Customers, developers and testers constantly interact with each other.</li>
+	<li>Working software is delivered frequently (weeks rather than months).</li>
+	<li>Face-to-face conversation is the best form of communication.</li>
+	<li>Close, daily cooperation between business people and developers.</li>
+	<li>Continuous attention to technical excellence and good design.</li>
+	<li>Regular adaptation to changing circumstances.</li>
+	<li>Even late changes in requirements are welcomed</li>
+  </ul>
+  <br>
+  <h4>Disadvantages of Agile model: </h4>
+  <ul>
+	<li>In case of some software deliverables, especially the large ones, it is difficult to assess the effort required at the beginning of the software development life cycle.</li>
+	<li>There is lack of emphasis on necessary designing and documentation.</li>
+	<li>The project can easily get taken off track if the customer representative is not clear what final outcome that they want.</li>
+	<li>Only senior programmers are capable of taking the kind of decisions required during the development process. Hence it has no place for newbie programmers, unless combined with experienced resources.</li>
+  </ul>
+  <br>
+  <h4>Agile software development values</h4>
+  <p>Based on their combined experience of developing software and helping others do that, the seventeen signatories to the manifesto proclaimed that they value:</p>
+  <ul>
+	<li><b>Individuals and interactions</b> over processes and tools - <i>Люди и взаимодействия важнее процессов и инструментов</i></li>
+	<li><b>Working software</b> over comprehensive documentation - <i>Работающее программное обеспечение над исчерпывающей документацией</i></li>
+	<li><b>Customer collaboration</b> over contract negotiation - <i>Сотрудничество с клиентами в ходе переговоров по контракту</i></li>
+	<li><b>Responding to change</b> over following a plan - <i>Реагирование на изменение вместо следования плану</i></li>
+  </ul>
+  
+  <img src="https://i.pinimg.com/736x/18/eb/f4/18ebf41bbe0b8580cfed8e33141b13e2.jpg" alt="picture">
+</div>
+
+<button class="accordion" style="border-top: solid 2px; background-color: #E0E0E0; font-size: 18px;">Challenger Space Shuttle</button>
+<div class="panel">
+  <p>The most tragic failures are those that result in a loss of life. On January 28 1986, the <a href="https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster" target="_blank" style="text-decoration: none; color: blue;">Challenger Space Shuttle exploded just 76 seconds</a> after take off. It was later determined that a faulty seal on one of the solid rocket boosters combined with the cold weather conditions allowed the tragedy to unfold. Human error was also partly to blame, as experts had warned that the weather conditions would make the launch more risky.
+    <br><br> The disaster was caused by the failure of the two redundant O-ring seals in a joint in the Space Shuttle's right solid rocket booster (SRB). The record-low temperatures of the launch reduced the elasticity of the rubber O-rings, reducing their ability to seal the joints.
+
+    Human error can impact any project, big or small, but the role of project management is to put systems in place to minimise the risk of human error derailing a project.</p><br>
+    <p><i>In my opinion, to solve this problem, managers should check shuttle status more correctly, spend more time on tests.</i></p>
+  <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2011/07/first_launch_of_atlantis2/9846766-3-eng-GB/First_launch_of_Atlantis_pillars.jpg" alt="picture" style="width: 300px; height: 600px;">
+</div>
+
+<button class="accordion">Figures Flowchart</button>
+<div class="panel">
+  <table>
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/100px-Flowchart_Terminal.svg.png" style="width: 200px; height: 100px;" alt=" "></td>
+      <td>Terminal</td>
+      <td>Indicates the beginning and ending of a program or sub-process. Represented as a stadium, oval or rounded (fillet) rectangle. They usually contain the word "Start" or "End", or another phrase signaling the start or end of a process, such as "submit inquiry" or "receive product". </td>
+    </tr>
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flowchart_Process.svg/100px-Flowchart_Process.svg.png" style="width: 200px; height: 100px;" alt=" "></td>
+      <td>Process</td>
+      <td>Represents a set of operations that changes value, form, or location of data. Represented as a rectangle.</td>
+    </tr>
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flowchart_Decision.svg/100px-Flowchart_Decision.svg.png" style="width: 200px; height: 100px;" alt=" "></td>
+      <td>Decision</td>
+      <td>Shows a conditional operation that determines which one of the two paths the program will take. The operation is commonly a yes/no question or true/false test. Represented as a diamond (rhombus).</td>
+    </tr>
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flowchart_IO.svg/100px-Flowchart_IO.svg.png" style="width: 200px; height: 100px;" alt=" "></td>
+      <td>Input/Output</td>
+      <td>Indicates the process of inputting and outputting data, as in entering data or displaying results. Represented as a rhomboid.</td>
+    </tr>
+  </table>
+  
+</div>
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
